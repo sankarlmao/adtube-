@@ -11,109 +11,109 @@
         <div class="logo-container">
             <a href="/" id="home-link">
                 <img src="logo.png" alt="AdTube" class="logo-img">
-                <div style="font-size: 10px; color: #666; margin-left: 5px;">Broadcast Your Ads&trade;</div>
             </a>
         </div>
-        <div class="auth-links">
-            <a href="#">Sign Up</a> | <a href="#">My Account</a> | <a href="#">History</a> | <a href="#">Help</a> | <a href="#">Log In</a>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>
+                    <svg viewBox="0 0 24 24" width="20" height="20" style="fill: #333;"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="user-actions">
+            <button class="btn-upload">Upload</button>
+            <a href="#">Sign in</a>
         </div>
     </header>
 
-    <div class="search-bar-container">
-        <div class="search-bar">
-            <input type="text" placeholder="Search for ads...">
-            <button>Search</button>
+    <aside class="guide">
+        <div class="guide-section">
+            <div class="guide-item active" data-view="home">What to Watch</div>
+            <div class="guide-item">My Channel</div>
+            <div class="guide-item">My Subscriptions</div>
+            <div class="guide-item">History</div>
+            <div class="guide-item">Watch Later</div>
         </div>
-    </div>
+        <div class="guide-section">
+            <div class="guide-title">Subscriptions</div>
+            <div class="guide-item">Classic Ads TV</div>
+            <div class="guide-item">Super Bowl Vault</div>
+            <div class="guide-item">Tech Promos</div>
+            <div class="guide-item">Browse channels</div>
+        </div>
+    </aside>
 
-    <nav>
-        <ul class="nav-tabs">
-            <li class="nav-tab active" data-tab="home">Home</li>
-            <li class="nav-tab" data-tab="videos">Videos</li>
-            <li class="nav-tab" data-tab="channels">Channels</li>
-            <li class="nav-tab" data-tab="groups">Groups</li>
-            <li class="nav-tab" data-tab="categories">Categories</li>
-            <li class="nav-tab" data-tab="upload">Upload</li>
-        </ul>
-    </nav>
+    <main id="main-content">
+        <!-- Home View -->
+        <div id="home-view" class="content-container">
+            <div id="channel-banner" style="width: 100%; height: 180px; background: linear-gradient(to right, #cc181e, #f1f1f1); margin-bottom: 20px; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: white; font-size: 32px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                AD TUBE ORIGINALS
+            </div>
+            <div class="section-title">
+                <span>Recommended</span>
+            </div>
+            <div class="video-grid" id="recommended-grid">
+                <!-- Populated by JS -->
+            </div>
 
-    <main class="container" id="main-content">
-        <!-- Home Page Content (Default) -->
-        <div id="home-view">
-            <section>
-                <div class="section-header">
-                    <h2>Featured Ads</h2>
-                    <a href="#">See More Ads</a>
-                </div>
-                <div class="video-grid" id="featured-ads-grid">
-                    <!-- Populated by JS -->
-                </div>
-            </section>
-
-            <section>
-                <div class="section-header">
-                    <h2>Recently Added</h2>
-                </div>
-                <div class="video-grid" id="recent-ads-grid">
-                    <!-- Populated by JS -->
-                </div>
-            </section>
+            <div class="section-title">
+                <span>Popular Ads</span>
+            </div>
+            <div class="video-grid" id="popular-grid">
+                <!-- Populated by JS -->
+            </div>
         </div>
 
-        <!-- Video Player View (Hidden by default) -->
-        <div id="player-view" class="hidden">
-            <div id="player-column">
-                <div class="player-container" id="video-player">
-                    <!-- Iframe inserted by JS -->
-                </div>
-                <div class="video-info-box">
-                    <h1 id="playing-title" style="font-size: 18px; margin-bottom: 10px;">Ad Title</h1>
-                    <div class="video-meta">
-                        Added: <span id="playing-date">April 22, 2026</span> | Views: <span id="playing-views">0</span>
+        <!-- Watch View -->
+        <div id="player-view" class="content-container hidden">
+            <div class="player-layout">
+                <div class="player-column">
+                    <div class="player-box" id="video-player">
+                        <!-- Iframe inserted by JS -->
                     </div>
-                    <div class="video-description" id="playing-description">
-                        Ad description goes here.
+                    <div class="video-details">
+                        <h1 id="playing-title">Ad Title</h1>
+                        <div class="channel-info">
+                            <div class="channel-thumb"></div>
+                            <div style="flex: 1;">
+                                <div class="channel-name" id="playing-channel">AdTube Originals</div>
+                                <div class="meta" id="sub-count">1,240,582 subscribers</div>
+                            </div>
+                            <button class="btn-subscribe" style="background-color: #cc181e; color: white; border: none; padding: 10px 15px; border-radius: 2px; font-weight: bold; cursor: pointer;">Subscribe</button>
+                        </div>
+                        <div class="video-stats" style="margin-top: 15px; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                            <div class="meta" style="font-size: 18px; color: #333;"><span id="playing-views">0</span> views</div>
+                            <div style="text-align: right;">
+                                <div style="display: flex; gap: 15px; font-weight: bold; margin-bottom: 5px;">
+                                    <span>Like</span> <span>Dislike</span>
+                                </div>
+                                <div style="width: 150px; height: 3px; background-color: #ccc; position: relative;">
+                                    <div id="like-bar" style="width: 95%; height: 100%; background-color: #008000; position: absolute; left: 0;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px; padding-top: 5px; color: #333;" id="playing-description">
+                            Ad description goes here.
+                        </div>
+                    </div>
+                    <!-- Comments -->
+                    <div id="comments-section" style="background-color: white; margin-top: 15px; padding: 20px;">
+                        <div style="font-size: 16px; margin-bottom: 20px;">All Comments (<span id="comment-count">124</span>)</div>
+                        <div id="comments-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-column">
+                    <div class="section-title" style="font-size: 13px;">Related videos</div>
+                    <div class="related-list" id="related-ads">
+                        <!-- Populated by JS -->
                     </div>
                 </div>
             </div>
-            <div id="sidebar-column">
-                <!-- Related ads -->
-            </div>
         </div>
-
-        <!-- Sidebar for Home -->
-        <aside id="home-sidebar">
-            <div class="sidebar-box promoted-ad">
-                <h3>Promoted Ad</h3>
-                <div style="margin-bottom: 10px;">
-                    <img src="featured_thumb.png" alt="Featured Ad" style="width: 100%; border: 1px solid #ccc;">
-                </div>
-                <a href="#" style="font-weight: bold;">New "Cocoa Crunch" Ad!</a>
-                <p style="font-size: 11px; margin-top: 5px;">Watch the latest cereal commercial that everyone is talking about.</p>
-            </div>
-            <div class="sidebar-box">
-                <h3>What's New</h3>
-                <ul>
-                    <li><a href="#">AdTube is now live!</a></li>
-                    <li><a href="#">Upload your favorite ads.</a></li>
-                    <li><a href="#">Vote for Ad of the Year.</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-box" style="background-color: #eef;">
-                <h3>Ads Being Watched</h3>
-                <ul id="live-watching">
-                    <!-- Populated by JS -->
-                </ul>
-            </div>
-        </aside>
     </main>
-
-    <footer>
-        <div class="footer-links">
-            <a href="#">About Us</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Copyright</a> | <a href="#">Help</a>
-        </div>
-        <div>Copyright &copy; 2005 AdTube, Inc.</div>
-    </footer>
 
     <script src="app.js"></script>
 </body>

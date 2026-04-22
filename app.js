@@ -1,108 +1,160 @@
 const ads = [
+    // Indian Ads
     {
-        id: 'v_XfVfO1uMc',
-        title: "Budweiser - 'Whassup' (1999)",
-        views: '1,240,582',
-        date: 'Nov 12, 2005',
-        description: "Classic Budweiser commercial that started a cultural phenomenon. Whassup!",
-        category: 'Classic'
+        id: 'kfw61pqw7GQ',
+        title: "Fevicol - The Bus Ad (Classic)",
+        views: '8,200,000',
+        date: 'Oct 12, 2011',
+        description: "The legendary Fevicol advertisement showing the strength of the bond, even on a crowded bus.",
+        category: 'Indian'
     },
+    {
+        id: 'e7JATezA1nY',
+        title: "Cadbury Dairy Milk - Cricket (1994)",
+        views: '4,500,000',
+        date: 'Aug 15, 2012',
+        description: "Kuch khaas hai hum sabhi mein. The iconic dancing girl in the cricket stadium.",
+        category: 'Indian'
+    },
+    {
+        id: 'ogZGU5C9Pjc',
+        title: "Happydent - Tera Din Roshan",
+        views: '12,000,000',
+        date: 'Jun 20, 2011',
+        description: "The sparkling white teeth that light up the whole city. One of the most creative Indian ads.",
+        category: 'Indian'
+    },
+    {
+        id: 'sKk_z-9jR4U',
+        title: "Amul - Amul Doodh Peeta Hai India",
+        views: '3,100,000',
+        date: 'Jan 01, 2013',
+        description: "The classic Amul milk jingle that every Indian knows by heart.",
+        category: 'Indian'
+    },
+    {
+        id: 'm_9mHhU4z7E',
+        title: "Hamara Bajaj - The Iconic Jingle",
+        views: '2,800,000',
+        date: 'Feb 10, 2012',
+        description: "The spirit of a rising India captured in a scooter commercial.",
+        category: 'Indian'
+    },
+    {
+        id: '4iS9e53u6kU',
+        title: "Imperial Blue - Men Will Be Men (Compilation)",
+        views: '25,000,000',
+        date: 'Mar 15, 2013',
+        description: "The humorous 'Men Will Be Men' series that became a cult classic.",
+        category: 'Indian'
+    },
+    {
+        id: 'tVpL45s-33I',
+        title: "Washing Powder Nirma - Classic Ad",
+        views: '5,000,000',
+        date: 'Apr 20, 2011',
+        description: "The jingle that defined Indian television for decades.",
+        category: 'Indian'
+    },
+    {
+        id: 'gHGDN9-Y4No',
+        title: "Google Search: Reunion",
+        views: '15,000,000',
+        date: 'Nov 13, 2013',
+        description: "A touching story of two friends separated by the partition, reunited by Google Search.",
+        category: 'Indian'
+    },
+    {
+        id: 'Zp_W4kLqLp0',
+        title: "Vodafone - ZooZoos (Best of)",
+        views: '9,000,000',
+        date: 'May 05, 2012',
+        description: "The adorable ZooZoos that took India by storm during the IPL.",
+        category: 'Indian'
+    },
+    // Global Ads (Verified Embeds)
     {
         id: 'owGykVbfgUE',
         title: "Old Spice - The Man Your Man Could Smell Like",
-        views: '850,231',
-        date: 'Oct 05, 2005',
+        views: '55,000,000',
+        date: 'Feb 04, 2010',
         description: "Look at your man, now back to me. Now back at your man, now back to me.",
-        category: 'Humor'
+        category: 'Global'
     },
     {
-        id: 'R7S67fXv9f8',
-        title: "Coca-Cola - Happiness Factory",
-        views: '420,119',
-        date: 'Dec 01, 2005',
-        description: "A look inside the magical world of a Coca-Cola vending machine.",
-        category: 'Fantasy'
+        id: 'R55e-uHQna0',
+        title: "Volkswagen - The Force",
+        views: '65,000,000',
+        date: 'Feb 02, 2011',
+        description: "A little kid tries to use the Force on a VW Passat.",
+        category: 'Global'
     },
     {
-        id: 'fxS_wL4q8_Y',
-        title: "Pepsi - Gladiator ft. Britney, Beyonce, Pink",
-        views: '3,102,445',
-        date: 'Aug 15, 2005',
-        description: "The ultimate arena battle featuring the queens of pop.",
-        category: 'Music'
+        id: 'ZUG9qYTJMsI',
+        title: "Dollar Shave Club - Our Blades Are F***ing Great",
+        views: '28,000,000',
+        date: 'Mar 06, 2012',
+        description: "The viral ad that launched a subscription empire.",
+        category: 'Global'
     },
     {
-        id: 'qX9v9m9R6qE',
-        title: "Skittles - Touch the Rainbow",
-        views: '210,000',
-        date: 'Sep 22, 2005',
-        description: "Everything I touch turns to Skittles.",
-        category: 'Surreal'
+        id: 'IJNR2EpS0jw',
+        title: "Dumb Ways to Die",
+        views: '200,000,000',
+        date: 'Nov 14, 2012',
+        description: "The most adorable public safety announcement ever.",
+        category: 'Global'
     },
     {
-        id: 'vL_3eO0-Lyo',
-        title: "Apple - Get a Mac: Virus",
-        views: '1,005,000',
-        date: 'May 10, 2005',
-        description: "Hello, I'm a Mac. And I'm a PC.",
-        category: 'Tech'
-    },
-    {
-        id: 'I07xDdFE6ko',
-        title: "Honda - The Cog (2003)",
-        views: '540,000',
-        date: 'Jun 15, 2005',
-        description: "An incredible Rube Goldberg machine made entirely of Honda Accord parts.",
-        category: 'Creative'
-    },
-    {
-        id: 'Zbe8QZ_D-tU',
-        title: "Cadbury's Gorilla",
-        views: '1,200,450',
-        date: 'Jul 20, 2005',
-        description: "A gorilla playing the drums to Phil Collins. Pure advertising gold.",
-        category: 'Music'
-    },
-    {
-        id: 'W_f0Y1E0Y4k',
-        title: "Geico - Hump Day",
-        views: '900,000',
-        date: 'Aug 05, 2005',
-        description: "Guess what day it is! GUESS! WHAT! DAY! IT! IS!",
-        category: 'Humor'
+        id: 'M7FIvfx5J10',
+        title: "Volvo Trucks - The Epic Split",
+        views: '110,000,000',
+        date: 'Nov 13, 2013',
+        description: "Jean-Claude Van Damme performs the most epic split ever.",
+        category: 'Global'
     }
 ];
 
-function renderAds() {
-    const featuredGrid = document.getElementById('featured-ads-grid');
-    const recentGrid = document.getElementById('recent-ads-grid');
-    const liveWatching = document.getElementById('live-watching');
+const mockComments = [
+    "This is pure gold! I remember watching this on TV.",
+    "The creativity back then was on another level.",
+    "I'm only here for the jingle. It's stuck in my head now!",
+    "Legendary ad. They don't make them like this anymore.",
+    "Who else is watching this in 2013?",
+    "This ad literally defined my childhood.",
+    "Indian ads have so much emotion. Love it!",
+    "That Fevicol ad is still the strongest bond ever lol.",
+    "Men will be men... so true haha!",
+    "Google Reunion ad always makes me cry. 😭"
+];
 
-    featuredGrid.innerHTML = '';
-    recentGrid.innerHTML = '';
-    liveWatching.innerHTML = '';
+function renderAds() {
+    const recommendedGrid = document.getElementById('recommended-grid');
+    const popularGrid = document.getElementById('popular-grid');
+
+    if (!recommendedGrid || !popularGrid) return;
+
+    recommendedGrid.innerHTML = '';
+    popularGrid.innerHTML = '';
 
     ads.forEach((ad, index) => {
         const adHtml = `
-            <div class="video-item" onclick="playVideo('${ad.id}')">
+            <div class="video-card" onclick="playVideo('${ad.id}')">
                 <div class="thumbnail">
                     <img src="https://img.youtube.com/vi/${ad.id}/mqdefault.jpg" alt="${ad.title}">
                 </div>
-                <div class="video-info">
-                    <a href="?v=${ad.id}" class="video-title" onclick="event.preventDefault(); playVideo('${ad.id}')">${ad.title}</a>
-                    <span class="video-meta">${ad.views} views</span>
+                <div class="title">${ad.title}</div>
+                <div class="meta">
+                    ${ad.views} views • ${ad.date}
                 </div>
             </div>
         `;
 
-        if (index < 3) {
-            featuredGrid.innerHTML += adHtml;
+        if (index < 6) {
+            recommendedGrid.innerHTML += adHtml;
         } else {
-            recentGrid.innerHTML += adHtml;
+            popularGrid.innerHTML += adHtml;
         }
-
-        // Live watching sidebar
-        liveWatching.innerHTML += `<li><a href="?v=${ad.id}" onclick="event.preventDefault(); playVideo('${ad.id}')">${ad.title}</a></li>`;
     });
 }
 
@@ -112,7 +164,6 @@ function playVideo(id) {
 
     // Show player view, hide home view
     document.getElementById('home-view').classList.add('hidden');
-    document.getElementById('home-sidebar').classList.add('hidden');
     document.getElementById('player-view').classList.remove('hidden');
 
     // Set player content
@@ -123,9 +174,17 @@ function playVideo(id) {
 
     // Set info
     document.getElementById('playing-title').textContent = ad.title;
-    document.getElementById('playing-date').textContent = ad.date;
     document.getElementById('playing-views').textContent = ad.views;
     document.getElementById('playing-description').textContent = ad.description;
+    document.getElementById('playing-channel').textContent = ad.category + " Ads Channel";
+    
+    // Set random stats
+    const likePercent = Math.floor(Math.random() * 20) + 80; // 80-100%
+    document.getElementById('like-bar').style.width = likePercent + '%';
+    document.getElementById('comment-count').textContent = Math.floor(Math.random() * 500) + 100;
+
+    // Render comments
+    renderComments();
 
     // Scroll to top
     window.scrollTo(0, 0);
@@ -133,23 +192,65 @@ function playVideo(id) {
     // Update URL (mock)
     window.history.pushState({id: id}, ad.title, `?v=${id}`);
 
-    // Update sidebar column in player view
-    const sidebarCol = document.getElementById('sidebar-column');
-    sidebarCol.innerHTML = '<div class="sidebar-box"><h3>Related Ads</h3><ul id="related-ads"></ul></div>';
+    // Update related ads
     const relatedList = document.getElementById('related-ads');
-    ads.filter(a => a.id !== id).slice(0, 5).forEach(related => {
-        relatedList.innerHTML += `<li><a href="?v=${related.id}" onclick="event.preventDefault(); playVideo('${related.id}')">${related.title}</a></li>`;
+    relatedList.innerHTML = '';
+    ads.filter(a => a.id !== id).slice(0, 10).forEach(related => {
+        relatedList.innerHTML += `
+            <div class="related-item" onclick="playVideo('${related.id}')">
+                <div class="related-thumb">
+                    <img src="https://img.youtube.com/vi/${related.id}/mqdefault.jpg" alt="${related.title}">
+                </div>
+                <div class="related-info">
+                    <div class="title">${related.title}</div>
+                    <div class="meta">${related.views} views</div>
+                </div>
+            </div>
+        `;
+    });
+}
+
+function renderComments() {
+    const commentsList = document.getElementById('comments-list');
+    commentsList.innerHTML = '';
+    
+    // Shuffle and pick 5 comments
+    const shuffled = [...mockComments].sort(() => 0.5 - Math.random());
+    shuffled.slice(0, 5).forEach(text => {
+        commentsList.innerHTML += `
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <div style="width: 40px; height: 40px; background-color: #eee; border-radius: 2px;"></div>
+                <div>
+                    <div style="font-weight: bold; font-size: 13px; margin-bottom: 3px;">AdTube User</div>
+                    <div style="font-size: 13px; color: #333;">${text}</div>
+                </div>
+            </div>
+        `;
     });
 }
 
 // Handle Home link
 document.getElementById('home-link').addEventListener('click', (e) => {
     e.preventDefault();
+    goHome();
+});
+
+function goHome() {
     document.getElementById('home-view').classList.remove('hidden');
-    document.getElementById('home-sidebar').classList.remove('hidden');
     document.getElementById('player-view').classList.add('hidden');
     document.getElementById('video-player').innerHTML = '';
     window.history.pushState({}, 'AdTube', '/');
+}
+
+// Sidebar links
+document.querySelectorAll('.guide-item').forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelectorAll('.guide-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        if (item.dataset.view === 'home') {
+            goHome();
+        }
+    });
 });
 
 // Handle Back/Forward
@@ -157,10 +258,7 @@ window.onpopstate = function(event) {
     if (event.state && event.state.id) {
         playVideo(event.state.id);
     } else {
-        document.getElementById('home-view').classList.remove('hidden');
-        document.getElementById('home-sidebar').classList.remove('hidden');
-        document.getElementById('player-view').classList.add('hidden');
-        document.getElementById('video-player').innerHTML = '';
+        goHome();
     }
 };
 
